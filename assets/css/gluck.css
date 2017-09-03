@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "CLimousines";
+    src: url('../fonts/Champagne_Limousines.ttf');
+}
+
+@font-face {
+    font-family: "CLimousinesB";
+    src: url('../fonts/Champagne_Limousines_Bold.ttf');
+}
+
+@font-face {
+    font-family: "CLimousinesBI";
+    src: url('../fonts/Champagne_Limousines_Bold_Italic.ttf');
+}
+
+@font-face {
+    font-family: "CLimousinesI";
+    src: url('../fonts/Champagne_Limousines_Italic.ttf');
+}
+
+@font-face {
+    font-family: "Assassin";
+    src: url('../fonts/Assassin.ttf');
+}
+
+.font-climousines {
+    font-family: "CLimousines", serif;
+}
+
+.font-climousinesb {
+    font-family: "CLimousinesB", serif;
+}
+
+.font-climousinesbi {
+    font-family: "CLimousinesBI", serif;
+}
+
+.font-climousinesi {
+    font-family: "CLimousinesI", serif;
+}
+
+.font-assassin {
+    font-family: "Assassin", serif;
+}
+
+.ancla {
+    cursor: pointer;
+}
+
+.nav-inactive {
+    opacity: 0;
+    transition: all .2s;
+    z-index: -1;
+}
+
+.nav-active {
+    opacity: 1;
+    transition: all .2s;
+    z-index: 10000;
+}
+
+.fa-bars {
+    color: #ccc;
+    border: 1px solid #ccc;
+    background: #eeeeee;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#collapseOne div {
+    cursor: pointer;
+}
+
+.break-word {
+    -ms-word-break: break-all;
+    word-break: break-all;
+}
+
+.logo-gluck {
+    height: 130px;
+}
+
+.logo-gluck img {
+    position: absolute;
+    height: 205px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.bg-green-gluck {
+    background: #1fa67a;
+}
+
+.bg-green-gluck-alpha {
+    background: rgba(31, 166, 122, .4);
+}
+
+.text-green-gluck {
+    color: #1fa67a;
+}
+
+.x-small {
+    font-size: 11px;
+}
+
+.ancla {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.ancla:hover {
+    text-decoration: none;
+}
+
+.m-button:hover {
+    text-decoration: none;
+    background: #1fa67a;
+    color: white;
+}
+
+.b-activo {
+    text-decoration: none;
+    background: #1fa67a;
+    color: white;
+}
+
+.h-header {
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.h-header a {
+    text-decoration: none;
+}
+
+.h-header .img-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.box-shadow {
+    box-shadow: 0px -5px 20px 5px rgba(100, 100, 100, .3), 0px 26px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.box-shadow-down {
+    box-shadow: 0px 33px 17px -14px rgba(0, 0, 0, 0.5);
+}
+
+.bg-gray-gluck {
+    background: #777586;
+}
+
+.bg-purple-gluck {
+    background: #ABBEE2;
+}
+
+.bg-orange-gluck {
+    background: #EFAE3A;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.descripcion {
+    font-size: 14px;
+}
+
+.text-gray-gluck {
+    color: #777586;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all .2s;
+}
+
+.icon-circle:hover {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all .2s;
+}
+
+.min-height-500 {
+    height: 500px;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
