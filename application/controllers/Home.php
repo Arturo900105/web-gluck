@@ -1,7 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends CI_Controller
+{
 
     /**
      * Index Page for this controller.
@@ -18,31 +19,42 @@ class Home extends CI_Controller {
      * map to /index.php/welcome/<method_name>
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
-    public function index() {
+    public function index()
+    {
         $this->load->view('Home');
     }
 
-    public function nosotros() {
+    public function nosotros()
+    {
         $this->load->view('Nosotros');
     }
 
-    public function contacto() {
+    public function contacto()
+    {
         $this->load->view('Contacto');
     }
 
-    public function eventos() {
-        $this->load->view('Eventos');
+    public function eventos()
+    {
+        $data['imgSet'] = 'eventos';
+        $this->load->view('Eventos', $data);
     }
 
-    public function banquetes() {
-        $this->load->view('Banquetes');
+    public function banquetes()
+    {
+        $data['imgSet'] = 'banquetes';
+        $this->load->view('Banquetes', $data);
     }
 
-    public function congresos() {
-        $this->load->view('Congresos');
+    public function congresos()
+    {
+        $data['imgSet'] = 'congresos';
+        $this->load->view('Congresos', $data);
     }
 
-    public function convenciones() {
-        $this->load->view('Convenciones');
+    public function convenciones()
+    {
+        $data['imgSet'] = 'convenciones';
+        $this->load->view('Convenciones', $data);
     }
 }

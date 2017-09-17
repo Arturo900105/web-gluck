@@ -5091,7 +5091,7 @@ button.close {
   }
 }
 
-.carousel-control-prev,
+.zcarousel-control-prev,
 .carousel-control-next {
   position: absolute;
   top: 0;
@@ -5105,7 +5105,8 @@ button.close {
   width: 15%;
   color: #fff;
   text-align: center;
-  opacity: 0.5;
+  opacity: 1;
+  z-index: 14;
 }
 
 .carousel-control-prev:focus, .carousel-control-prev:hover,
