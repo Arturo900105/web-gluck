@@ -55,6 +55,6 @@ $route['contacto'] = 'home/contacto';
 $route['eventos'] = 'home/eventos';
 $route['banquetes'] = 'home/banquetes';
 $route['congresos'] = 'home/congresos';
-$route['convenciones'] = 'home/convenciones';
+$route['sociales'] = 'home/sociales';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

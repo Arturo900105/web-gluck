@@ -52,9 +52,9 @@ class Home extends CI_Controller
         $this->load->view('Congresos', $data);
     }
 
-    public function convenciones()
+    public function sociales()
     {
-        $data['imgSet'] = 'convenciones';
-        $this->load->view('Convenciones', $data);
+        $data['imgSet'] = 'sociales';
+        $this->load->view('Sociales', $data);
     }
 }

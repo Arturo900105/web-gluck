@@ -17,7 +17,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="container">
 				<div id="original-nav" class="row align-items-center pt-2 pb-0 mb-0">
 					<div class="col-md-5 bg-green-gluck logo-gluck">
-						<img src="<?php echo base_url('assets/img/Iconos-01.svg'); ?>" alt="Gluck">
+                        <a href="<?php echo base_url(); ?>">
+                            <img src="<?php echo base_url('assets/img/Iconos-01.svg'); ?>" alt="Gluck">
+                        </a>
 					</div>
 					<div class="row col-md-7 ml-1">
 						<a href="<?php echo base_url('nosotros'); ?>" class="col-md-4 pt-2 pb-2 m-button ancla b-activo">
@@ -40,9 +42,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<strong class="font-assassin h4 m-0 font-weight-bold">Congresos</strong>
 							<div class="x-small">Organizamos congresos</div>
 						</a>
-						<a href="<?php echo base_url('convenciones'); ?>" class="col-md-4 pt-2 pb-2 m-button ancla">
-							<strong class="font-assassin h4 m-0 font-weight-bold">Convenciones</strong>
-							<div class="x-small">Organizamos convenciones</div>
+						<a href="<?php echo base_url('sociales'); ?>" class="col-md-4 pt-2 pb-2 m-button ancla">
+							<strong class="font-assassin h4 m-0 font-weight-bold">Sociales</strong>
+							<div class="x-small">sociales</div>
 						</a>
 					</div>
 				</div>
@@ -64,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div href="<?php echo base_url('eventos'); ?>" class="pt-1 pb-1 ancla">Eventos</div>
 				<div href="<?php echo base_url('banquetes'); ?>" class="pt-1 pb-1 ancla">Banquetes</div>
 				<div href="<?php echo base_url('congresos'); ?>" class="pt-1 pb-1 ancla">Congresos</div>
-				<div href="<?php echo base_url('convenciones'); ?>" class="pt-1 pb-1 ancla">Convenciones</div>
+				<div href="<?php echo base_url('sociales'); ?>" class="pt-1 pb-1 ancla">Sociales</div>
 			</div>
 		</div>
 		<!-- TODO TERMINA MENÚ PARA MÓVILES -->
@@ -161,12 +163,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="col-md-3">
 					<div class="p-3 p-relative text-center bg-gray-gluck">
-						<a href="<?php echo base_url('convenciones'); ?>" class="ml-auto mr-auto d-flex align-items-center justify-content-center text-white">
+						<a href="<?php echo base_url('sociales'); ?>" class="ml-auto mr-auto d-flex align-items-center justify-content-center text-white">
 							<img class="icon-circle" src="<?php echo base_url('assets/img/Iconos-03.svg'); ?>">
 						</a>
 					</div>
 					<div class="service-title mt-3">
-						<h6 class="text-uppercase text-center font-climousinesb h5">Convenciones</h6>
+						<h6 class="text-uppercase text-center font-climousinesb h5">Sociales</h6>
 						<p class="text-center description mt-3">
 							Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
 						</p>
