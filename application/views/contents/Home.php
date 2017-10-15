@@ -1,77 +1,3 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Gluck</title>
-    <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/img/favicon.png'); ?>"/>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/font-awesome.css'); ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/gluck.css'); ?>">
-</head>
-<body>
-<!-- TODO COMIENZA MENÚ PARA ESCRITORIO -->
-<div class="container-fluid text-center d-none d-md-block">
-    <div class="container">
-        <div id="original-nav" class="row align-items-center pt-2 pb-0 mb-0">
-            <div class="col-md-5 bg-green-gluck logo-gluck">
-                <a href="<?php echo base_url(); ?>">
-                    <img src="<?php echo base_url('assets/img/Iconos-01.svg'); ?>" alt="Gluck">
-                </a>
-            </div>
-            <div class="row col-md-7 ml-1">
-                <a href="<?php echo base_url('nosotros'); ?>" class="col-md-4 pt-2 pb-2 m-button ancla">
-                    <strong class="font-assassin h4 m-0 font-weight-bold">Nosotros</strong>
-                    <div class="x-small">Conócenos un poco</div>
-                </a>
-                <a href="<?php echo base_url('contacto'); ?>" class="col-md-4 pt-2 pb-2 m-button ancla">
-                    <strong class="font-assassin h4 m-0 font-weight-bold">Contacto</strong>
-                    <div class="x-small">Pregunta por nosotros</div>
-                </a>
-                <a href="<?php echo base_url('eventos'); ?>" class="col-md-4 pt-2 pb-2 m-button ancla">
-                    <strong class="font-assassin h4 m-0 font-weight-bold">Eventos</strong>
-                    <div class="x-small">Organizamos tus eventos</div>
-                </a>
-                <a href="<?php echo base_url('banquetes'); ?>" class="col-md-4 pt-2 pb-2 m-button ancla">
-                    <strong class="font-assassin h4 m-0 font-weight-bold">Banquetes</strong>
-                    <div class="x-small">Todo para tus banquetes</div>
-                </a>
-                <a href="<?php echo base_url('congresos'); ?>" class="col-md-4 pt-2 pb-2 m-button ancla">
-                    <strong class="font-assassin h4 m-0 font-weight-bold">Congresos</strong>
-                    <div class="x-small">Organizamos congresos</div>
-                </a>
-                <a href="<?php echo base_url('sociales'); ?>" class="col-md-4 pt-2 pb-2 m-button ancla">
-                    <strong class="font-assassin h4 m-0 font-weight-bold">Sociales</strong>
-                    <div class="x-small">sociales</div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- TODO TERMINA MENÚ PARA ESCRITORIO -->
-
-<!-- TODO COMIENZA MENÚ PARA MÓVILES -->
-<div class="container-fluid bg-green-gluck fixed-top d-md-none">
-    <div class="row align-items-center no-gutters">
-        <div class="col text-left text-uppercase text-white">Gluck</div>
-        <div class="col-auto ml-auto text-right">
-            <i class="fa fa-bars rounded pl-2 pr-2 m-2" data-toggle="collapse" data-parent="#accordion"
-               href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></i>
-        </div>
-    </div>
-    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-        <div href="<?php echo base_url('nosotros'); ?>" class="pt-1 pb-1 ancla">Nosotros</div>
-        <div href="<?php echo base_url('contactos'); ?>" class="pt-1 pb-1 ancla">Contacto</div>
-        <div href="<?php echo base_url('eventos'); ?>" class="pt-1 pb-1 ancla">Eventos</div>
-        <div href="<?php echo base_url('banquetes'); ?>" class="pt-1 pb-1 ancla">Banquetes</div>
-        <div href="<?php echo base_url('congresos'); ?>" class="pt-1 pb-1 ancla">Congresos</div>
-        <div href="<?php echo base_url('sociales'); ?>" class="pt-1 pb-1 ancla">Sociales</div>
-    </div>
-</div>
-<!-- TODO TERMINA MENÚ PARA MÓVILES -->
-
 <div class="container p-0 h-header box-shadow">
     <img class="w-100 img-bg" src="<?php echo base_url('assets/img/home.jpg'); ?>" alt="Gluck">
     <div class="w-100 bg-green-gluck-alpha min-height-500">
@@ -99,15 +25,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
             <div class="col-md-6 text-right text-white item-bottom">
-                <h1 class="col-12"><strong>Company Slogan</strong></h1>
-                <h6 class="col-12">Lorem ipsum solor sit</h6>
-                <p class="col-sm-9 col-md-9 col-lg-6 ml-auto text-justify f-10">
-                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-                    cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
-                    galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-                </p>
-                <button class="btn bg-green-gluck mr-3 text-white">Conocer más...</button>
+                <h1 class="col-12"><strong>"Te proveemos con todo lo necesario."</strong></h1>
+                <h6 class="col-sm-9 col-md-9 col-lg-9 ml-auto text-justify">
+                    Eventos privados, convenciones, congresos y mucho más. Decoraciones y la mejor comida
+                    para su elemento y profesionales preparados para crear la mejor experiencia.
+                </h6>
             </div>
         </div>
     </div>
@@ -125,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="service-title mt-3">
                 <h6 class="text-uppercase text-center font-climousinesb h5">Eventos</h6>
                 <p class="text-center description mt-3">
-                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                   Tenemos lo necesario para que tus eventos sean de lo que todos van a hablar.
                 </p>
             </div>
         </div>
@@ -139,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="service-title mt-3">
                 <h6 class="text-uppercase text-center font-climousinesb h5">Banquetes</h6>
                 <p class="text-center description mt-3">
-                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                    Profesionales y comida, buet, cena o mesa de postre. Te damos la mejor experiencia culinaria.
                 </p>
             </div>
         </div>
@@ -153,7 +75,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="service-title mt-3">
                 <h6 class="text-uppercase text-center font-climousinesb h5">Congresos</h6>
                 <p class="text-center description mt-3">
-                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                    Nacionales e internacionales en las mejores ubicaciones.
                 </p>
             </div>
         </div>
@@ -167,7 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="service-title mt-3">
                 <h6 class="text-uppercase text-center font-climousinesb h5">Sociales</h6>
                 <p class="text-center description mt-3">
-                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                    Eventos sociales y trabajos con hasta más de 4000 personas.
                 </p>
             </div>
         </div>
@@ -199,11 +121,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
-
-<script type="application/javascript" src="<?php echo base_url('assets/js/jquery-3.2.1.min.js'); ?>"></script>
-<script type="application/javascript" src="<?php echo base_url('assets/js/tether.min.js'); ?>"></script>
-<script type="application/javascript" src="<?php echo base_url('assets/js/popper.min.js'); ?>"></script>
-<script type="application/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
-<script type="application/javascript" src="<?php echo base_url('assets/js/gluck.js'); ?>"></script>
-</body>
-</html>
