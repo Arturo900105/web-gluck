@@ -97,8 +97,8 @@ class Home extends CI_Controller
             'smtp_host' => 'smtp.1and1.com',
             'smtp_port' => 25,
             'smtp_crypto' => 'tls',
-            'smtp_user' => 'enviar_emails@glucksc.com', //example: jujo@domain.com
-            'smtp_pass' => 'admin1234',
+            'smtp_user' => 'contacto@glucksc.com', //example: jujo@domain.com
+            'smtp_pass' => 'iHZWCKm0',
             'mailtype' => 'html',
             'charset' => 'utf-8',
             'newline' => "\r\n"
