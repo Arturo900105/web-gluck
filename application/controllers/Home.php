@@ -95,10 +95,11 @@ class Home extends CI_Controller
         $this->load->library('email');
 
         $config['protocol'] = 'smtp';
-        $config['smtp_host'] = 'ssl://smtp.gmail.com'; //change this
+        $config['smtp_host'] = 'ssl://smtp.googlemail.com'; //change this
         $config['smtp_port'] = '465';
         $config['smtp_user'] = 'contacto.glucksc@gmail.com'; //change this
         $config['smtp_pass'] = '$iHZWCKm0'; //change this
+        $config['smtp_timeout'] = '60';
         $config['mailtype'] = 'html';
         $config['charset'] = 'iso-8859-1';
         $config['wordwrap'] = TRUE;
