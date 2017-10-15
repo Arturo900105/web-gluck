@@ -95,7 +95,7 @@ class Home extends CI_Controller
         $config = array(
             'protocol' => 'smtp',
             'smtp_host' => 'smtp.1and1.com',
-            'smtp_port' => 587,
+            'smtp_port' => 25,
             'smtp_crypto' => 'tls',
             'smtp_user' => 'enviar_emails@glucksc.com', //example: jujo@domain.com
             'smtp_pass' => 'admin1234',
