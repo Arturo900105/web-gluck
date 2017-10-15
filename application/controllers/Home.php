@@ -95,9 +95,9 @@ class Home extends CI_Controller
         $this->load->library('email');
 
         $config['protocol'] = 'sendmail';
-        $config['mailtype'] = 'html';
-        $config['charset']  = 'utf-8';
-        $config['newline']  = "\r\n";
+        $config['mailpath'] = '/usr/sbin/sendmail';
+        $config['charset'] = 'iso-8859-1';
+        $config['wordwrap'] = TRUE;
 
         $this->email->initialize($config);
         $this->email->from($data['from'], $data['from_name']);
