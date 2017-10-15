@@ -1,0 +1,13 @@
+{
+    "name": "fonck/web-gluck",
+    "authors": [
+        {
+            "name": "Arturo Sánchez Fonseca",
+            "email": "fonck.five@gmail.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^6.0",
+        "mailin-api/mailin-api-php": "^1.0"
+    }
+}

@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+require_once APPPATH . 'vendor/mailin-api/mailin-api-php/V2.0/Mailin.php';
 
 class Home extends CI_Controller
 {
@@ -47,9 +48,8 @@ class Home extends CI_Controller
                         $this->session->set_flashdata('correcto', 'Correo enviado correctamente!');
                         redirect(current_url());
                     } else {
-                        echo $this->email->print_debugger();
-                        /*$this->session->set_flashdata('correcto', 'Error al enviar el correo!');
-                        redirect(current_url());*/
+                        $this->session->set_flashdata('correcto', 'Error al enviar el correo!');
+                        redirect(current_url());
                     }
                 }
             }
@@ -92,8 +92,13 @@ class Home extends CI_Controller
 
     public function send_email($data)
     {
-
-        if (mail('fonck.five@gmail.com','Asunto','asdasdasdas')) {
+        $mailin = new Mailin("https://api.sendinblue.com/v2.0", "GYL3JcU2jR6kyWqa");
+        $data = array("to" => array("fonck.five@gmail.com" => "to whom!"),
+            "from" => array("contacto@glucksc.com", "from email!"),
+            "subject" => "My subject",
+            "html" => "This is the <h1>HTML</h1>"
+        );
+        if ($mailin->send_email($data)) {
             return TRUE;
         } else {
             return FALSE;
