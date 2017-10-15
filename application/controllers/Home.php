@@ -47,7 +47,7 @@ class Home extends CI_Controller
                         $this->session->set_flashdata('correcto', 'Correo enviado correctamente!');
                         redirect(current_url());
                     } else {
-                        $this->email->print_debugger();
+                        echo $this->email->print_debugger();
                         /*$this->session->set_flashdata('correcto', 'Error al enviar el correo!');
                         redirect(current_url());*/
                     }
