@@ -92,26 +92,8 @@ class Home extends CI_Controller
 
     public function send_email($data)
     {
-        mail('fonck.five@gmail.com','Asunto','asdasdasdas');
-        $this->load->library('email');
 
-        $config['protocol'] = 'smtp';
-        $config['smtp_host'] = 'smtp.gmail.com'; //change this
-        $config['smtp_port'] = '587';
-        $config['smtp_user'] = 'contacto.glucksc@gmail.com'; //change this
-        $config['smtp_pass'] = '$iHZWCKm0'; //change this
-        $config['smtp_crypto'] = 'tls';
-        $config['mailtype']     = 'html';
-        $config['wordwrap']     = TRUE;
-        $config['charset']  = 'iso-8859-1';
-        $config['newline']  = "\r\n";
-
-        $this->email->initialize($config);
-        $this->email->from($data['from'], $data['from_name']);
-        $this->email->to('contacto@glucksc.com');
-        $this->email->subject('Contacto - http://glucksc.com/contacto');
-        $this->email->message('<strong>Tel&eacute;fono</strong>: ' . $data['telephone'] . '<br /><br /><strong>Mensaje</strong>:<p>' . $data['message'] . '</p>');
-        if ($this->email->send()) {
+        if (mail('fonck.five@gmail.com','Asunto','asdasdasdas')) {
             return TRUE;
         } else {
             return FALSE;
