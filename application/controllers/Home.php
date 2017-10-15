@@ -96,7 +96,7 @@ class Home extends CI_Controller
         $data = array("to" => array("contacto@glucksc.com" => "glucksc.com"),
             "from" => array($data['from'], $data['from_name']),
             "subject" => "Mensaje - Cliente",
-            "html" => 'strong>Tel&eacute;fono</strong>: ' . $data['telephone'] . '<br /><br /><strong>Mensaje</strong>:<p>' . $data['message'] . '</p>'
+            "html" => '<strong>Tel&eacute;fono</strong>: ' . $data['telephone'] . '<br /><br /><strong>Mensaje</strong>:<p>' . $data['message'] . '</p>'
         );
         if ($mailin->send_email($data)) {
             return TRUE;
