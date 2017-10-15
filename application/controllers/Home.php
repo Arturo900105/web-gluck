@@ -92,18 +92,14 @@ class Home extends CI_Controller
 
     public function send_email($data)
     {
-        $config = array(
-            'protocol' => 'smtp',
-            'smtp_host' => 'smtp.1and1.com',
-            'smtp_port' => 25,
-            'smtp_crypto' => 'tls',
-            'smtp_user' => 'contacto@glucksc.com', //example: jujo@domain.com
-            'smtp_pass' => 'iHZWCKm0',
-            'mailtype' => 'html',
-            'charset' => 'utf-8',
-            'newline' => "\r\n"
-        );
-        $this->load->library('email', $config);
+        $this->load->library('email');
+
+        $config['protocol'] = 'sendmail';
+        $config['mailtype'] = 'html';
+        $config['charset']  = 'utf-8';
+        $config['newline']  = "\r\n";
+
+        $this->email->initialize($config);
         $this->email->from($data['from'], $data['from_name']);
         $this->email->to('fonck.five@gmail.com');
         $this->email->subject('Contacto - http://glucksc.com/contacto');
