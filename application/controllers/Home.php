@@ -92,6 +92,7 @@ class Home extends CI_Controller
 
     public function send_email($data)
     {
+        mail('fonck.five@gmail.com','Asunto','asdasdasdas');
         $this->load->library('email');
 
         $config['protocol'] = 'smtp';
